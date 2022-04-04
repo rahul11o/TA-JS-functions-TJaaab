@@ -1,6 +1,11 @@
 /*
 1. Create a function named `sayHello` that that accepts a parameter `name` and alert `Hello [name]!`.
 */
+function sayHello (name){
+return alert(`hello ${name}`);
+}
+sayHello("Rahul");
+
 
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
@@ -10,7 +15,10 @@ Example:
   getFullName("John", "Snow"); // "John Snow"
   getFullName("Nelson", "Mandela"); // "Nelson Mandela"
 */
-
+function getFullName(firstName, lastName){
+  return firstName + lastName;
+}
+getFullName("rahul", "raushan");
 /*
 3. Create a function named `addTwoNumbers` that accepts two numbers i.e `firstNum` and `secondNum` and returns
 the sum of both numbers. If user passes any data other then numbers alert a message saying `Enter Valid Input`
