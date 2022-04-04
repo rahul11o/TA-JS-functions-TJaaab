@@ -41,17 +41,28 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function addOne(n){
+  return n + 1;
+}
 
 // - Write a Function Expression
+let addOne = function(n){
+  return n + 1;
+}
 
 // - Write an Arrow Function without curly brackets(if possible)
+let addOne = (n) => n+1;
 
 // - Write an Arrow Function with curly brackets
+let addOne = (n) =>{
+  return n+1;
+}
 
 // - Execute the function
+addOne(16);
 
 // - Execute the function and store the return value in a variable.
-
+let returnValue = addOne(34);
 // - What is the typeof returnValue
 
 /* 2. Subtract one
