@@ -7,7 +7,6 @@
   * [ ] Return the result dog age in dog year.
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
-
 function calculateDogAge() {
   // Your code goes here
 }
@@ -102,7 +101,6 @@ min(0, -10);
 /*
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
-
 function typeCheck() {
   // Your code goes here
 }
