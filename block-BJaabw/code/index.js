@@ -11,10 +11,13 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+function minToSec( minutes = 0) {
+  return minutes * 60;
 }
 // - Execute the function with required parameter
+minToSec(50)
+minToSec(13)
+minToSec(2)
 
 /* 2. 
 Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
@@ -26,10 +29,17 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
+function isInRange(lower, upper , n) {
+  if (n > lower && n < upper) {
+    return true;
+  }else{
+    return false;
+  }
 }
+
 // - Execute the function with required parameter
+isInRange(1, 20, 9); 
+isInRange(1, 10, 19);
 
 /* 2. calculateBMI
 
@@ -49,8 +59,19 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
-  // Your code
+function calculateBMI( weight, height ) {
+  let bmi = weight / (height * height);
+   if (bmi < 18.5){
+     return "underweight";
+   } else if(bmi => 18.5 && bmi <= 24.9){
+     return "Normal weight";
+   } else if (bmi => 25 && bmi <= 29.9){
+     return "Overweight";
+   }else if ( bmi > 30){
+     return "obese";
+   } else{
+     return "Enter valid input";
+   }
 }
 
 /* 3. appropiateDrinks
